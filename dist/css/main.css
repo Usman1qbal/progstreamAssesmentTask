@@ -1,0 +1,225 @@
+.navStyle {
+  margin-top: 40px;
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  /* padding: 0;
+  padding-bottom: 8px; */
+  padding: 0 14px 8px 14px;
+}
+
+.navStyle:hover {
+  font-weight: 600;
+}
+
+.navStyle:nth-child(1) {
+  border-bottom: 1px solid white;
+}
+
+.navLink {
+  position: absolute;
+  right: 5vh;
+  top: 5vh;
+  margin-top: 12px;
+}
+
+@media (max-width: 850px) {
+  .navStyle {
+    display: none;
+  }
+}
+
+.mobileButton {
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+@media (min-width: 850px) {
+  .mobileButton {
+    display: none;
+  }
+}
+
+.image-background {
+  height: 100vh;
+  background-image: url(../../assets/pexels-fauxels-3184357.png);
+  background-repeat: no-repeat;
+  object-fit: fill;
+  width: 100%;
+  background-size: cover;
+}
+
+.aboutUs {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  max-width: 900px;
+  width: 100%;
+  height: 40vh;
+  margin-top: 30vh;
+}
+
+@media (max-width: 500px) {
+  .aboutUs {
+    height: 50vh;
+  }
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px;
+}
+
+.container2 {
+  height: 10vh;
+  position: relative;
+  border: 3px;
+}
+
+.mainTitle {
+  z-index: 1;
+  font-size: 80px;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .mainTitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mainTitle {
+    font-size: 50px;
+  }
+}
+
+.subTitle {
+  font-size: medium;
+}
+
+@media (max-width: 1000px) {
+  .subTitle {
+    font-size: 13px;
+  }
+}
+
+.featuresText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 20px 190px 50px 190px;
+}
+
+@media (max-width: 500px) {
+  .featuresText {
+    padding: 20px 60px 50px 60px;
+  }
+}
+
+.structure {
+  display: flex;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .structure {
+    flex-direction: column;
+  }
+}
+
+.products-desktop {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .products-desktop {
+    display: none;
+  }
+}
+
+.products-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .products-mobile {
+    display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  background-color: #313131;
+}
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.footerLink {
+  flex-direction: column;
+  margin-left: 15vw;
+  margin-top: 5vh;
+}
+
+@media (max-width: 900px) {
+  .footerLink {
+    margin-left: 10px;
+  }
+}
+
+.social-square {
+  max-width: 60px;
+  max-height: 60px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.mobileList {
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  padding: 16px;
+  height: 400px;
+  display: none;
+  transition: height 2s;
+}
+
+.mobileList a {
+  color: white;
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.mobileClose {
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  margin-top: 20px;
+  margin-right: 100px;
+  justify-content: flex-start;
+}
